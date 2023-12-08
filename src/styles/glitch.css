@@ -1,4 +1,5 @@
 .glitch {
+  background: url("../static/img/background.png") no-repeat 50% 50% / cover;
   height: 100%;
   width: 100%;
   top: 0;

@@ -1,32 +1,34 @@
 import './static/scss/style.scss'
 
-import homebanner from './static/img/_home-banner.png'
+import homebanner from './static/img/profile-banner.png'
 
 import About from './components/About'
 import Services from './components/Services'
 import DayNightMood from './layout/DayNightMood'
 import Header from './layout/Header'
+import ParticlesBackground from './components/ParticlesBackground'
+import Contact from './components/Contact'
 
 
 export default function Home() {
+
   return (
    <>
    <Header />
 <main className="main-left pp-main-section">
    <section id="home" data-nav-tooltip="Home" className="pp-section pp-scrollable">
       <div className="home-banner">
-         <div className="particles" id="particles-box">
-            <canvas style={{width: '100%', height: '100%', pointerEvents: 'none' }} data-generated="false" aria-hidden="true" width="1401" height="1384"></canvas>
-         </div>
+         <ParticlesBackground />
          <div className="container">
             <div className="row full-screen align-items-center">
                <div className="col-lg-6">
                   <div className="type-box">
                      <h6>Hello, I am</h6>
-                     <h1 className="font-alt">Sergio Gadot</h1>
-                     <p className="lead">I Am Passionate <span id="type-it"></span></p>
-                     <p className="desc">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
-                     <div className="btn-bar"><a className="px-btn px-btn-theme" href="#">Donwload CV</a></div>
+                     <h1 className="font-alt">Boris Rioseco</h1>
+                     <p className="lead">I Am Passionate <span id="type-it"></span>Software Developer</p>
+                     <p className="desc">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites and web services.</p>
+                     <div className="btn-bar">
+                        <a className="px-btn px-btn-theme" href="https://engdevbrs-cv.s3.amazonaws.com/Boris_Rioseco_CV.pdf" target='_blank' rel='noreferrer'>Download CV</a></div>
                   </div>
                </div>
                <div className="col-lg-6">
@@ -214,51 +216,7 @@ export default function Home() {
          </div>
       </div>
    </section> */}
-   <section id="contactus" data-nav-tooltip="Contact Me" className="pp-section pp-scrollable section dark-bg">
-      <div className="container">
-         <div className="title">
-            <h3>Get in touch.</h3>
-         </div>
-         <div className="row">
-            <div className="col-lg-5 col-xl-4 m-15px-tb">
-               <div className="contact-info">
-                  <h4>What’s your story? Get in touch</h4>
-                  <p>Always available for freelancing if the right project comes along, Feel free to contact me.</p>
-                  <ul>
-                     <li className="media"><i className="ti-map"></i><span className="media-body">123 Stree New York City , United States Of America 750065.</span></li>
-                     <li className="media"><i className="ti-email"></i><span className="media-body">support@domain.com</span></li>
-                     <li className="media"><i className="ti-mobile"></i><span className="media-body">+044 9696 9696 3636</span></li>
-                  </ul>
-               </div>
-            </div>
-            <div className="col-lg-7 col-xl-8 m-15px-tb">
-               <div className="contact-form">
-                  <h4>Say Something</h4>
-                  <form id="contact-form">
-                     <div className="row">
-                        <div className="col-md-6">
-                           <div className="form-group"><input name="name" id="name" placeholder="Name *" className="form-control " type="text" defaultValue="" /></div>
-                        </div>
-                        <div className="col-md-6">
-                           <div className="form-group"><input name="email" id="email" placeholder="Email *" className="form-control " type="email" defaultValue="" /></div>
-                        </div>
-                        <div className="col-12">
-                           <div className="form-group"><input name="subject" id="subject" placeholder="Subject *" className="form-control " type="text" defaultValue="" /></div>
-                        </div>
-                        <div className="col-md-12">
-                           <div className="form-group"><textarea name="message" id="message" placeholder="Your message *" rows="5" className="form-control "></textarea></div>
-                        </div>
-                        <div className="col-md-12">
-                           <div className="send"><input className="px-btn px-btn-theme" type="submit" defaultValue="send message" /></div>
-                           <span id="suce_message" className="text-success" style={{ display: 'none' }}>Message Sent Successfully</span><span id="err_message" className="text-danger" style={{ display: 'none' }}>Message Sending Failed</span>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
+   <Contact />
 </main>
    <DayNightMood />
 </>

@@ -18,7 +18,7 @@ const Header = ({ blog }) => {
         <div className="d-flex">
           <div className="navbar-brand">
             <Link href="/">
-              <a className="logo-text">Sergio</a>
+              <h6 className="logo-text">Boris</h6>
             </Link>
           </div>
           <button
@@ -42,28 +42,24 @@ const Header = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src={profile} title="" alt="" />
-              </div>
-              <h5>Sergiobi</h5>
+                <img src={profile} style={{ maxWidth: '100% !important' }} title="" alt="" />
+              </div><h5>engdevbrs</h5>
             </div>
           </div>
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
         <div className="nav justify-content-center social-icons">
-          <a href="#">
+        <a href="https://github.com/engdevbrs" target="_blank" rel="noreferrer">
+            <i className="fab fa-github" />
+          </a>
+          <a href="https://www.facebook.com/boris.francisco.1" target="_blank" rel="noreferrer">
             <i className="fab fa-facebook-f" />
           </a>
-          <a href="#">
-            <i className="fab fa-twitter" />
-          </a>
-          <a href="#">
+          <a href="https://www.instagram.com/boris.fre" target="_blank" rel="noreferrer">
             <i className="fab fa-instagram" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/borisfre" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin-in" />
-          </a>
-          <a href="#">
-            <i className="fab fa-pinterest" />
           </a>
         </div>
       </header>

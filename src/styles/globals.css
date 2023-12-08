@@ -61,6 +61,10 @@ iframe {
   color: #fff !important;
 }
 
+.about-me .img img {
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .container {
     width: 950px;

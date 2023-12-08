@@ -211,7 +211,7 @@
 	.hb-img {
 		img {
 			@include up-md {
-				max-width: 120%;
+				max-width: 80%;
 			}
 		}
 	}
@@ -627,8 +627,8 @@
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		position: absolute;
-		margin-top: 0px;
-		margin-left: 10px;
+		top: 0px;
+		right: 0px;
 		@include down-sm {
 			position: relative;
 		    margin-bottom: 14px;
@@ -840,9 +840,6 @@
 		box-shadow: none;
 		font-size: 14px;
 		height: calc(2em + .75rem + 2px);
-		&.invalid {
-			border-color: #dc3545!important;
-		}
 		.theme-light & {
 			color: $px-dark;
 			border: 1px solid rgba($px-dark, 0.3);
@@ -851,6 +848,14 @@
 	}
 	textarea.form-control {
 		height: auto;
+	}
+	.alert-primary{
+		color: $px-white;
+		background-color: rgb(85, 169, 36) !important;
+	}
+	.alert-danger{
+		color: $px-white;
+		background-color: #d34654 !important;
 	}
 }
 
