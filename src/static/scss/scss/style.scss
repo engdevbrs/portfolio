@@ -50,7 +50,7 @@
 	}
 }
 .section {
-	padding: 100px 0;
+	padding: 50px 0;
 	@include down-sm {
 		padding-bottom: 60px;
 	}
@@ -533,7 +533,7 @@
 
 /* testimonial
 -----------------------------------*/
-.testimonial-01 {
+.project-01 {
 	background: $px-dark;
 	padding: 35px;
 	overflow: hidden;

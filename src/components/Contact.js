@@ -65,11 +65,6 @@ const Contact = () => {
              <div id="contact-info" className="contact-info">
                 <h4>What’s your story? Get in touch</h4>
                 <p>Always available for freelancing if the right project comes along, Feel free to contact me.</p>
-                <ul>
-                   <li className="media"><i className="ti-map"></i><span className="media-body">26 Blake Street, Ponsony, Auckland.</span></li>
-                   <li className="media"><i className="ti-email"></i><span className="media-body">fearzlx3@gmail.com</span></li>
-                   <li className="media"><i className="ti-mobile"></i><span className="media-body">+64 02108688368</span></li>
-                </ul>
              </div>
           </div>
           <div className="col-lg-7 col-xl-8 m-15px-tb">

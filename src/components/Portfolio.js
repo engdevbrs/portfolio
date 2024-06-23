@@ -1,5 +1,8 @@
 import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
+import irodumapp from '../static/img/irodumapp.png'
+import smartfood from '../static/img/comingsoon.png'
+
 const Portfolio = () => {
   // Isotope
   const isotope = useRef();
@@ -35,11 +38,11 @@ const Portfolio = () => {
     <section
       id="work"
       data-nav-tooltip="Work"
-      className="pp-section pp-scrollable section dark-bg"
+      className="pp-section section dark-bg"
     >
       <div className="container">
         <div className="title">
-          <h3>My Portfolio.</h3>
+          <h3>My Projects.</h3>
         </div>
         <div className="portfolio-filter-01">
           <ul className="filter nav">
@@ -50,7 +53,7 @@ const Portfolio = () => {
             >
               All
             </li>
-            <li
+            {/* <li
               className={`c-pointer ${activeBtn("branding")}`}
               onClick={handleFilterKeyChange("branding")}
               data-filter=".branding"
@@ -77,25 +80,28 @@ const Portfolio = () => {
               data-filter=".product"
             >
               Product
-            </li>
+            </li> */}
           </ul>
         </div>{" "}
         {/* Portfolio Filter */}
-        <div className="portfolio-content grid-gutter-lg grid-col-3 lightbox-gallery">
+        <div className="portfolio-content grid-gutter-lg grid-col-2 lightbox-gallery">
           <div className="grid-item product branding fashion">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
-                <h5 className="white-color font-weight-bold">Momb ios App</h5>
-                <span>Broadcasting ios App</span>
+                <h5 className="white-color font-weight-bold">IRODUM</h5>
+                <span>Chilean marketplace for trades workers such as carpenters, welders, plumbers, who need casual jobs
+requested by customers who need to solve a problem quickly</span>
               </div>
               <div className="portfolio-img">
-                <img src="static/img/m-portfolio-1.jpg" title="" alt="" />
+                <img src={irodumapp} title="" alt="" />
                 <div className="portfolio-icon">
                   <a
-                    href="static/img/m-portfolio-1.jpg"
+                    href="https://www.irodum.com"
+                    target="_blank"
+                    rel="noreferrer"
                     className="gallery-link"
                   >
-                    <span className="ti-plus" />
+                    <span className="ti-link" />
                   </a>
                 </div>
               </div>
@@ -105,24 +111,26 @@ const Portfolio = () => {
           <div className="grid-item photoshop">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
-                <h5 className="white-color font-weight-bold">Momb ios App</h5>
-                <span>Broadcasting ios App</span>
+                <h5 className="white-color font-weight-bold">WISEST - Under Construction</h5>
+                <span>It will be an mobile application to have control of our pantry and 
+                  from our stored products the app will recommend food recipes.</span>
               </div>
               <div className="portfolio-img">
-                <img src="static/img/m-portfolio-2.jpg" title="" alt="" />
+                <img src={smartfood} title="" alt="" />
                 <div className="portfolio-icon">
                   <a
-                    href="static/img/m-portfolio-2.jpg"
+                    href="#portfolio"
                     className="gallery-link"
+                    style={{display:'none'}}
                   >
-                    <span className="ti-plus" />
+                    <span className="ti-link" />
                   </a>
                 </div>
               </div>
             </div>
           </div>{" "}
           {/* grid item */}
-          <div className="grid-item product branding">
+          {/* <div className="grid-item product branding">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
                 <h5 className="white-color font-weight-bold">Momb ios App</h5>
@@ -140,9 +148,9 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item product photoshop">
+          {/* <div className="grid-item product photoshop">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
                 <h5 className="white-color font-weight-bold">Momb ios App</h5>
@@ -160,9 +168,9 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item branding">
+          {/* <div className="grid-item branding">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
                 <h5 className="white-color font-weight-bold">Momb ios App</h5>
@@ -180,9 +188,9 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item product photoshop">
+          {/* <div className="grid-item product photoshop">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
                 <h5 className="white-color font-weight-bold">Momb ios App</h5>
@@ -200,9 +208,9 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item fashion">
+          {/* <div className="grid-item fashion">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
                 <h5 className="white-color font-weight-bold">Momb ios App</h5>
@@ -220,9 +228,9 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item product branding">
+          {/* <div className="grid-item product branding">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
                 <h5 className="white-color font-weight-bold">Momb ios App</h5>
@@ -240,9 +248,9 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item fashion">
+          {/* <div className="grid-item fashion">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
                 <h5 className="white-color font-weight-bold">Momb ios App</h5>
@@ -260,7 +268,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
         </div>
       </div>

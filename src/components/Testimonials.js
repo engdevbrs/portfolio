@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import SwiperCore, {
   Autoplay,
   EffectFade,
@@ -7,6 +6,7 @@ import SwiperCore, {
   Pagination,
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay, Grid]);
 const Testimonials = () => {
   const props = {
@@ -27,26 +27,27 @@ const Testimonials = () => {
     },
   };
   return (
-    <Fragment>
+    <section className="pp-section pp-scrollable">
+      <div className="container">
       <div className="title">
-        <h3>Testimonials.</h3>
+        <h3>Projects.</h3>
       </div>
       <Swiper {...props}>
-        <SwiperSlide className="testimonial-01 media">
+        <SwiperSlide className="project-01 media">
           <div className="avatar">
             <img src="static/img/team-1.jpg" title="" alt="" />
           </div>
           <div className="media-body">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the {`industry's`} standard dummy
-              text ever since the 1500s.
+          <h6>FEB/2023 to NOV/2023</h6>
+            <p>I have developed a Chilean web application, whose objective is to create a
+              marketplace for trades workers such as carpenters, welders, gas fitters, who need casual jobs
+              requested by customers who need to solve a problem urgently or quickly.
             </p>
-            <h6>Jennifer Lutheran</h6>
+            <h6>IRODUM</h6>
             <span>CEO at pxdraft</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="testimonial-01 media">
+        <SwiperSlide className="project-01 media">
           <div className="avatar">
             <img src="static/img/team-2.jpg" title="" alt="" />
           </div>
@@ -60,37 +61,10 @@ const Testimonials = () => {
             <span>CEO at pxdraft</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="testimonial-01 media">
-          <div className="avatar">
-            <img src="static/img/team-3.jpg" title="" alt="" />
-          </div>
-          <div className="media-body">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the {`industry's`} standard dummy
-              text ever since the 1500s.
-            </p>
-            <h6>Jennifer Lutheran</h6>
-            <span>CEO at pxdraft</span>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial-01 media">
-          <div className="avatar">
-            <img src="static/img/team-1.jpg" title="" alt="" />
-          </div>
-          <div className="media-body">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the {`industry's`} standard dummy
-              text ever since the 1500s.
-            </p>
-            <h6>Jennifer Lutheran</h6>
-            <span>CEO at pxdraft</span>
-          </div>
-        </SwiperSlide>
       </Swiper>
       <div className="owl-dots"></div>
-    </Fragment>
+    </div>
+    </section>
   );
 };
 export default Testimonials;

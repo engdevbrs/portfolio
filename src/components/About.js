@@ -34,13 +34,13 @@ const About = () => {
               </div>
               <div className="about-text">
                 <h3>
-                  {`I'm`} a Software developer with over 3 years of
+                  {`I'm`} a Software developer with over 4 years of
                   experience.{" "}
                 </h3>
                 <p>
-                  {`I'm`} a Chilean fullstack developer with 3 years of expierience using different types of languages and frameworks,
+                  {`I'm`} a Chilean fullstack developer with 4 years of expierience using different types of languages and frameworks,
                    always delivering a high quality product to the client. 
-                  In my last 3 years I've been working in multidisciplinary teams using agile methodologies and kanban methodology.
+                  In my last 4 years I've been working in multidisciplinary teams using agile methodologies and kanban methodology.
                 </p>
                 <div className="btn-bar">
                   <a className="px-btn px-btn-theme" style={{ cursor: 'pointer' }} onClick={() => scrollIntoContact()}>
@@ -139,7 +139,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src={irodum} width='70%' title="" alt="" />
+                  <img src={irodum} style={{ borderRadius: '150px' }} width='70%' title="" alt="" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -158,7 +158,7 @@ const About = () => {
                       <li>Nodejs, Expressjs, Multer</li>
                     </ul>
                     <p>The deployment for the backend is with EC2 and the frontend is with Cloudfront.</p>
-                    <p>The version control is using Git.</p>
+                    <p>The version control was using Git.</p>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@ const About = () => {
               <div className="col-sm-9 col-md-9 col-xl-10">
                 <div className="rb-right">
                   <h6>Fullstack Developer</h6>
-                  <label>NTTDATA | Remote | Jun 2021 - May 2022</label>
+                  <label>NTTDATA | Remote | Feb 2020 - May 2022</label>
                   <div className="rb-time">Full Time</div>
                   <p>In this job i used agile methodologies in 5-day high performance sprint. I worked for a banking
                   company, my role in this job was helping the bank's executives to create a loan reporting

@@ -1507,43 +1507,43 @@ mark {
 
 /* testimonial
 -----------------------------------*/
-.testimonial-01 {
+.project-01 {
   background: #0b0b13;
   padding: 35px;
   overflow: hidden;
   margin-top: 15px;
   margin-bottom: 25px;
 }
-.theme-light .testimonial-01 {
+.theme-light .project-01 {
   background: #f7f7ff;
 }
-.testimonial-01 .avatar {
+.project-01 .avatar {
   width: 100px;
   height: 100px;
   overflow: hidden;
 }
 @media (max-width: 767px) {
-  .testimonial-01 .avatar {
+  .project-01 .avatar {
     width: 50px;
     height: 50px;
   }
 }
-.testimonial-01 .media-body {
+.project-01 .media-body {
   padding-left: 25px;
 }
 @media (max-width: 767px) {
-  .testimonial-01 .media-body {
+  .project-01 .media-body {
     padding-left: 15px;
   }
 }
-.testimonial-01 h6 {
+.project-01 h6 {
   color: #fff;
   margin: 0 0 5px;
 }
-.theme-light .testimonial-01 h6 {
+.theme-light .project-01 h6 {
   color: #0b0b13;
 }
-.testimonial-01 span {
+.project-01 span {
   font-size: 13px;
 }
 

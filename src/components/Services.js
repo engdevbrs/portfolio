@@ -10,7 +10,7 @@ const Services = () => {
           <h3>What I do?</h3>
         </div>
         <div className="row">
-          <div className="col-sm-6 m-15px-tb">
+          <div className="col-sm-12 col-md-6 m-15px-tb">
             <div className="feature-box-01 media">
               <i className="icon theme-bg ti-notepad" />
               <div className="feature-content media-body">
@@ -23,7 +23,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6 m-15px-tb">
+          <div className="col-sm-12 col-md-6 m-15px-tb">
             <div className="feature-box-01 media">
               <i className="icon theme-bg icon-desktop" />
               <div className="feature-content media-body">
@@ -36,7 +36,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6 m-15px-tb">
+          <div className="col-sm-12 col-md-6 m-15px-tb">
             <div className="feature-box-01 media">
               <i className="icon theme-bg icon-target" />
               <div className="feature-content media-body">
@@ -48,7 +48,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6 m-15px-tb">
+          <div className="col-sm-12 col-md-6 m-15px-tb">
             <div className="feature-box-01 media">
               <i className="icon theme-bg ti-thumb-up" />
               <div className="feature-content media-body">
@@ -60,7 +60,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6 m-15px-tb">
+          <div className="col-sm-12 col-md-6 m-15px-tb">
             <div className="feature-box-01 media">
               <i className="icon theme-bg ti-rocket" />
               <div className="feature-content media-body">
@@ -72,7 +72,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6 m-15px-tb">
+          <div className="col-sm-12 col-md-6 m-15px-tb">
             <div className="feature-box-01 media">
               <i className="icon theme-bg ti-crown" />
               <div className="feature-content media-body">
